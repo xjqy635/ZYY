@@ -380,8 +380,18 @@
 	<string>
 	<vector>
 
-1432005945 source:c:\documents and settings\administrator\桌面\test\main.cpp
+1433853577 source:c:\documents and settings\administrator\桌面\test\main.cpp
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/System.hpp>
+	<iostream>
+	"Stage.h"
+	"define.h"
+	"Bg.h"
+	"Bgm.h"
+	"Plane.h"
+	"Bullet.h"
+	"Font.h"
 
 1429780453 c:\sfml-2.3\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -760,4 +770,194 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+
+1432040510 source:c:\documents and settings\administrator\桌面\test\background.cpp
+
+1433812731 c:\documents and settings\administrator\桌面\test\include\stage.h
+	<SFML/Graphics.hpp>
+	"Enemy.h"
+	"Bullet.h"
+	"Font.h"
+	<string>
+
+1432601621 c:\documents and settings\administrator\桌面\test\include\define.h
+
+1433906802 source:c:\documents and settings\administrator\桌面\test\src\stage.cpp
+	<SFML/Graphics.hpp>
+	"Stage.h"
+	"define.h"
+	<time.h>
+	<iostream>
+	"Bullet.h"
+	"Font.h"
+	<string>
+
+1432263273 c:\documents and settings\administrator\桌面\test\include\bg.h
+	<SFML/Graphics.hpp>
+
+1432263274 source:c:\documents and settings\administrator\桌面\test\src\bg.cpp
+	"Bg.h"
+	<SFML/Graphics.hpp>
+
+1429780453 c:\sfml-2.3\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\inputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\listener.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundstream.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\alresource.hpp
+	<SFML/Audio/Export.hpp>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\outputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundbuffer.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundfilefactory.inl
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundfilereader.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+
+1429780453 c:\sfml-2.3\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+
+1432141877 c:\documents and settings\administrator\桌面\test\include\bgm.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1432141877 source:c:\documents and settings\administrator\桌面\test\src\bgm.cpp
+	"Bgm.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1432886018 c:\documents and settings\administrator\桌面\test\include\plane.h
+	<SFML/Graphics.hpp>
+	<vector>
+	"Bullet.h"
+	"Biu.h"
+
+1432886095 source:c:\documents and settings\administrator\桌面\test\src\plane.cpp
+	"Plane.h"
+	"Bullet.h"
+	<SFML/Graphics.hpp>
+
+1433490896 c:\documents and settings\administrator\桌面\test\include\bullet.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1433492007 source:c:\documents and settings\administrator\桌面\test\src\bullet.cpp
+	"Bullet.h"
+	<SFML/Graphics.hpp>
+	"define.h"
+	<iostream>
+	<SFML/Audio.hpp>
+
+1432648369 c:\documents and settings\administrator\桌面\test\include\biu.h
+	<SFML/Audio.hpp>
+
+1432654850 source:c:\documents and settings\administrator\桌面\test\src\biu.cpp
+	"Biu.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1433906710 source:c:\documents and settings\administrator\桌面\test\src\enemy.cpp
+	"Enemy.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1433905042 c:\documents and settings\administrator\桌面\test\include\enemy.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1433853405 c:\documents and settings\administrator\桌面\test\include\font.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1433856854 source:c:\documents and settings\administrator\桌面\test\src\font.cpp
+	"Font.h"
+	<SFML/Graphics.hpp>
+	<string>
 

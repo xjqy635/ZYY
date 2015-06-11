@@ -13,7 +13,17 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/SFML-2.3/include" />
+					<Add directory="include" />
 				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-system-d" />
+					<Add directory="C:/SFML-2.3/lib" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/test" prefix_auto="1" extension_auto="1" />
@@ -22,6 +32,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,6 +42,26 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/Bg.h" />
+		<Unit filename="include/Bgm.h" />
+		<Unit filename="include/Biu.h" />
+		<Unit filename="include/Bullet.h" />
+		<Unit filename="include/Enemy.h" />
+		<Unit filename="include/Font.h" />
+		<Unit filename="include/Plane.h" />
+		<Unit filename="include/Stage.h" />
+		<Unit filename="include/define.h" />
+		<Unit filename="main.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="src/Bg.cpp" />
+		<Unit filename="src/Bgm.cpp" />
+		<Unit filename="src/Biu.cpp" />
+		<Unit filename="src/Bullet.cpp" />
+		<Unit filename="src/Enemy.cpp" />
+		<Unit filename="src/Font.cpp" />
+		<Unit filename="src/Plane.cpp" />
+		<Unit filename="src/Stage.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
