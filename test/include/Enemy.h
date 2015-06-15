@@ -2,6 +2,7 @@
 #define ENEMY_H
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+#include "Bullet.h"
 
 class Enemy
 {
@@ -11,11 +12,11 @@ class Enemy
         float speed,x1,y1,k;
         int note,blood;
         sf::Texture texture21;
+        sf::Texture texture4;
+        sf::Texture texture31;
         sf::Texture texture2;
         sf::Texture texture3;
-        sf::Texture texture4;
         //sf::Sprite enemy2;
-        sf::Texture texture31;
         //sf::Sprite enemy3;
         Enemy(sf::Vector2f position);
         sf::Sprite getenemy();
@@ -25,6 +26,7 @@ class Enemy
         void crash2(sf::Sprite a);
         void crash3(sf::Sprite a);
         sf::Sprite getenemy(int);
+
 };
 
 #endif // ENEMY_H

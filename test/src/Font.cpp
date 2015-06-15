@@ -13,10 +13,18 @@ Font::Font()
     text.setStyle(sf::Text::Bold);
     life.setFont(font);
     life.setString("***");
+    note=3;
+    level="1";
     life.setCharacterSize(40);
     life.setColor(sf::Color::Red);
     life.setStyle(sf::Text::Bold);
     life.setPosition(330,0);
+    grade.setFont(font);
+    grade.setString("Level:"+level);
+    grade.setCharacterSize(24);
+    grade.setColor(sf::Color::Blue);
+    grade.setStyle(sf::Text::Bold);
+    grade.setPosition(140,0);
 }
 Font::~Font()
 {

@@ -50,6 +50,9 @@
 		<Unit filename="include/Font.h" />
 		<Unit filename="include/Plane.h" />
 		<Unit filename="include/Stage.h" />
+		<Unit filename="include/boom.h">
+			<Option compile="1" />
+		</Unit>
 		<Unit filename="include/define.h" />
 		<Unit filename="main.cpp">
 			<Option target="Debug" />
@@ -62,6 +65,7 @@
 		<Unit filename="src/Font.cpp" />
 		<Unit filename="src/Plane.cpp" />
 		<Unit filename="src/Stage.cpp" />
+		<Unit filename="src/boom.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

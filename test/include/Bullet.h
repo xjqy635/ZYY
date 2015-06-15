@@ -10,8 +10,11 @@ class Bullet
         sf::Texture texture3;
         sf::Sprite bullet;
         Bullet(sf::Vector2f biuposition);
+        Bullet(sf::Vector2f biuposition,int,int);
         ~Bullet();
         sf::Sprite getbullet();
+        sf::Sprite getbullet(int);
+        int ifcrash(sf::Vector2f position1,sf::Vector2f position2,int x);
         int willdelete();
 };
 

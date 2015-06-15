@@ -33,39 +33,51 @@ int main()
             if (event.type == sf::Event::Closed)
                 stage.getwin()->close();
         }
-        hero.crtl();//move the hero
-        if(temp%30 == 0)
+        if(stage.font.note > 0)
         {
-            hero.fire();//fire the bulllet
-        }
-
-        if(temp%450 == 0)
-        {
-           stage.popenemy();//fire the bulllet
-        }
-        stage.getwin()->clear(sf::Color::Black);
-        stage.getwin()->draw(bg1.getbg()); //draw the background
-        stage.getwin()->draw(stage.font.text);
-        stage.getwin()->draw(stage.font.life);
-        stage.getwin()->draw(hero.getplane()); //draw the plane
-        /*if(hero.bullets.size() != 0)
-        {
-            for(std::vector<Bullet*>::iterator k = hero.bullets.begin();k != hero.bullets.end();k++)
+            hero.crtl();//move the hero
+            if(temp%30 == 0)
             {
-                stage.drawenemy(stage.getwin(),(*k)->getbullet().getPosition());
-                if(stage.i)
-                {
-                    (*k)->getbullet().setPosition(0,-610);
-                }
+                hero.fire();//fire the bulllet
             }
-        }
-        else
-        {*/
+
+            if(temp%450 == 0)
+            {
+               stage.popenemy();//fire the bulllet
+            }
+
+            if(temp%175 == 0)
+            {
+            stage.fire();
+            }
+            stage.getwin()->clear(sf::Color::Black);
+            stage.getwin()->draw(bg1.getbg()); //draw the background
+            stage.getwin()->draw(stage.font.text);
+            stage.getwin()->draw(stage.font.life);
+            stage.getwin()->draw(stage.font.grade);
+            stage.getwin()->draw(hero.getplane()); //draw the plane
+            stage.drawbiu(stage.getwin());
             stage.drawenemy(stage.getwin());
             if(hero.bullets.size() != 0)
             {
                 stage.crash(hero.bullets);
             }
+            if(stage.bullet.size() != 0)
+            {
+                stage.biucrash(hero.getplane().getPosition());
+            }
+            if(stage.enemies.size() != 0)
+            {
+                stage.planecrash(hero.getplane().getPosition());
+            }
+        }
+        if(stage.font.note == 0)
+        {
+            sf::Texture texture2;
+            texture2.loadFromFile("resources/image/gameover.png");
+            sf::Sprite bg2(texture2);
+            stage.getwin()->draw(bg2);
+        }
 /* *******************************************hero.bullet**************************************************** */
         for(std::vector<Bullet*>::iterator i = hero.bullets.begin();i != hero.bullets.end() && hero.bullets.size() != 0;)
         {

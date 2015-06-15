@@ -10,6 +10,7 @@ class Bg
         //sf::FloatRect box;
         Bg();
         sf::Sprite getbg();
+
 };
 
 #endif // BG_H

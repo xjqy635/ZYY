@@ -380,7 +380,7 @@
 	<string>
 	<vector>
 
-1433853577 source:c:\documents and settings\administrator\桌面\test\main.cpp
+1434385240 source:c:\documents and settings\administrator\桌面\test\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/System.hpp>
@@ -773,16 +773,18 @@
 
 1432040510 source:c:\documents and settings\administrator\桌面\test\background.cpp
 
-1433812731 c:\documents and settings\administrator\桌面\test\include\stage.h
+1434376382 c:\documents and settings\administrator\桌面\test\include\stage.h
 	<SFML/Graphics.hpp>
 	"Enemy.h"
 	"Bullet.h"
 	"Font.h"
 	<string>
+	"boom.h"
+	"Biu.h"
 
 1432601621 c:\documents and settings\administrator\桌面\test\include\define.h
 
-1433906802 source:c:\documents and settings\administrator\桌面\test\src\stage.cpp
+1434385611 source:c:\documents and settings\administrator\桌面\test\src\stage.cpp
 	<SFML/Graphics.hpp>
 	"Stage.h"
 	"define.h"
@@ -791,11 +793,13 @@
 	"Bullet.h"
 	"Font.h"
 	<string>
+	"boom.h"
+	<SFML/Audio.hpp>
 
-1432263273 c:\documents and settings\administrator\桌面\test\include\bg.h
+1434370717 c:\documents and settings\administrator\桌面\test\include\bg.h
 	<SFML/Graphics.hpp>
 
-1432263274 source:c:\documents and settings\administrator\桌面\test\src\bg.cpp
+1434370704 source:c:\documents and settings\administrator\桌面\test\src\bg.cpp
 	"Bg.h"
 	<SFML/Graphics.hpp>
 
@@ -922,11 +926,11 @@
 	"Bullet.h"
 	<SFML/Graphics.hpp>
 
-1433490896 c:\documents and settings\administrator\桌面\test\include\bullet.h
+1434079765 c:\documents and settings\administrator\桌面\test\include\bullet.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1433492007 source:c:\documents and settings\administrator\桌面\test\src\bullet.cpp
+1434095963 source:c:\documents and settings\administrator\桌面\test\src\bullet.cpp
 	"Bullet.h"
 	<SFML/Graphics.hpp>
 	"define.h"
@@ -942,22 +946,34 @@
 	<SFML/Audio.hpp>
 	<iostream>
 
-1433906710 source:c:\documents and settings\administrator\桌面\test\src\enemy.cpp
+1434039674 source:c:\documents and settings\administrator\桌面\test\src\enemy.cpp
 	"Enemy.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
+	"Bullet.h"
 
-1433905042 c:\documents and settings\administrator\桌面\test\include\enemy.h
+1434039756 c:\documents and settings\administrator\桌面\test\include\enemy.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
+	"Bullet.h"
 
-1433853405 c:\documents and settings\administrator\桌面\test\include\font.h
+1434376288 c:\documents and settings\administrator\桌面\test\include\font.h
 	<SFML/Graphics.hpp>
 	<string>
 
-1433856854 source:c:\documents and settings\administrator\桌面\test\src\font.cpp
+1434385626 source:c:\documents and settings\administrator\桌面\test\src\font.cpp
 	"Font.h"
 	<SFML/Graphics.hpp>
 	<string>
+
+1434028407 source:c:\documents and settings\administrator\桌面\test\include\boom.h
+	<SFML/Audio.hpp>
+
+1434028407 c:\documents and settings\administrator\桌面\test\include\boom.h
+	<SFML/Audio.hpp>
+
+1434028407 source:c:\documents and settings\administrator\桌面\test\src\boom.cpp
+	"boom.h"
+	<SFML/Audio.hpp>
 

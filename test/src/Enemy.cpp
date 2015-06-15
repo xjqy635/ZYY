@@ -2,17 +2,19 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <iostream>
+#include "Bullet.h"
 Enemy::Enemy(sf::Vector2f position)
 {
-    note=30;
+    //note=30;
     srand(time(0));
     int a=rand();
     a=a%8;
     if(a==0 || a==1 || a==6)
     {
+        note=1;
         this->texture11.loadFromFile("resources/image/enemy1.PNG");
-        this->texture2.loadFromFile("resources/image/enemy21.PNG");
-        this->texture3.loadFromFile("resources/image/enemy22.PNG");
+        //this->texture2.loadFromFile("resources/image/enemy21.PNG");
+        //this->texture3.loadFromFile("resources/image/enemy22.PNG");
         this->texture4.loadFromFile("resources/image/enemy23.PNG");
         sf::Sprite enemy11(texture11);
         this->enemy=enemy11;
@@ -25,9 +27,10 @@ Enemy::Enemy(sf::Vector2f position)
     }
     if(a==3||a==4||a==5||a==7)
     {
+        note=2;
         this->texture21.loadFromFile("resources/image/enemy2.PNG");
-        this->texture2.loadFromFile("resources/image/enemy21.PNG");
-        this->texture3.loadFromFile("resources/image/enemy22.PNG");
+        //this->texture2.loadFromFile("resources/image/enemy21.PNG");
+        //this->texture3.loadFromFile("resources/image/enemy22.PNG");
         this->texture4.loadFromFile("resources/image/enemy23.PNG");
         sf::Sprite enemy22(texture21);
         this->enemy=enemy22;
@@ -40,9 +43,10 @@ Enemy::Enemy(sf::Vector2f position)
     }
     if(a==2)
     {
+        note=3;
         this->texture31.loadFromFile("resources/image/enemy3.PNG");
-        this->texture2.loadFromFile("resources/image/enemy31.PNG");
-        this->texture3.loadFromFile("resources/image/enemy32.PNG");
+        //this->texture2.loadFromFile("resources/image/enemy31.PNG");
+        //this->texture3.loadFromFile("resources/image/enemy32.PNG");
         this->texture4.loadFromFile("resources/image/enemy33.PNG");
         sf::Sprite enemy33(texture31);
         this->enemy=enemy33;
@@ -51,7 +55,7 @@ Enemy::Enemy(sf::Vector2f position)
         this ->k=0;
         x1=165;
         y1=249;
-        blood=6;
+        blood=5;
     }
 }
 

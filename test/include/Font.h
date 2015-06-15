@@ -9,8 +9,10 @@ class Font
         sf::Font font;
         sf::Text text;
         sf::Text life;
-        string point;
+        sf::Text grade;
+        string point,level;
         Font();
+        int note;
         virtual ~Font();
 };
 
